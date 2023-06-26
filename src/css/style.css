@@ -1,0 +1,101 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.card {
+    width: 45px;
+    height: 30px;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.visa {
+    background-image: url('../img/visa.png');
+}
+
+.mastercard {
+    background-image: url('../img/mastercard.png');
+}
+
+.mir {
+    background-image: url('../img/mir.png');
+}
+
+.american-express {
+    background-image: url('../img/american_express.png');
+}
+
+.discover {
+    background-image: url('../img/discover.png');
+}
+
+.jcb {
+    background-image: url('../img/jcb.png');
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card:nth-child(n+2) {
+    margin-left: 5px;
+}
+
+#form {
+    margin-top: 20px;
+}
+
+.input, .button {
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.input {
+    border: 1px solid #bfbcbc;
+}
+
+.input:focus {
+    outline: 1px solid #222222;
+}
+
+.button {
+    font-weight: bold;
+    color: #4e4c4c;
+    background-color: #a4f173;
+    border: none;
+}
+
+.hide {
+    opacity: 0.1;
+    border: none;
+}
+
+.error-msg {
+    margin-top: 20px;
+    color: red;
+}
+
+.success-msg {
+    margin-top: 20px;
+    color: green;
+}
