@@ -9,7 +9,7 @@ document.body.innerHTML = `
 `;
 
 const cardWidget = new CardWidget(document.querySelector('.cards-widget'));
-cardWidget.bindToDOM();
+cardWidget.bindToDom();
 const cardValidator = new CardValidator();
 
 test.each([
