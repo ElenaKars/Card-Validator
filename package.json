@@ -44,6 +44,5 @@
     "html-webpack-plugin": "^4.5.1",
     "mini-css-extract-plugin": "^1.3.3",
     "webpack-merge": "^5.9.0"
-  },
-  "description": "![CI](https://github.com/ElenaKars/Card-Validator/actions/workflows/web.yml/badge.svg)"
+  }
 }
