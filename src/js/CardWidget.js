@@ -29,7 +29,7 @@ export default class CardWidget {
       this.ul.append(li);
     });
 
-    this.CardValidator = new CardValidator();
+    this.cardValidator = new CardValidator();
 
     this.input.addEventListener('input', () => this.CardValidator.checkCard(this.input.value));
   }
