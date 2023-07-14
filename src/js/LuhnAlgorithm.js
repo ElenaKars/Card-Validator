@@ -21,14 +21,14 @@ export default class LuhnAlgorithm {
       const checkNumComputed = this.calcCheckNum(value);
 
       if (checkNumComputed === checkNum) {
-        this.cardWidget.msgStatus('correct-card');
+        this.widget.msgStatus('correct-card');
       } else {
-        this.cardWidget.msgStatus('wrong-card');
+        this.widget.msgStatus('wrong-card');
       }
     } else if (value.length === 0) {
-      this.cardWidget.msgStatus('empty');
+      this.widget.msgStatus('empty');
     } else {
-      this.cardWidget.msgStatus('wrong-number');
+      this.widget.msgStatus('wrong-number');
     }
   }
 
