@@ -31,7 +31,7 @@ export default class CardWidget {
 
     this.cardValidator = new CardValidator();
 
-    this.input.addEventListener('input', () => this.CardValidator.checkCard(this.input.value));
+    this.input.addEventListener('input', () => this.cardValidator.checkCard(this.input.value));
   }
 
   msgStatus(text) {
@@ -48,11 +48,11 @@ export default class CardWidget {
     }
     if (text === 'wrong-card') {
       msg.classList.add('error-msg');
-      msg.textContent = `Ошибка! Номер карты неверен!\nТип карты: ${this.cardValidator.showType()}`;
+      msg.textContent = `Ошибка! Номер карты неверен!\n Тип карты: ${this.cardValidator.showType()}`;
     }
     if (text === 'correct-card') {
       msg.classList.add('success-msg');
-      msg.textContent = `Проверка прошла успешно!\nТип карты: ${this.cardValidator.showType()}`;
+      msg.textContent = `Проверка прошла успешно!\n Тип карты: ${this.cardValidator.showType()}`;
     }
     this.form.insertAdjacentElement('afterend', msg);
   }
